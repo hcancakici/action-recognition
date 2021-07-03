@@ -11,7 +11,7 @@ import multiprocessing as mproc
 import flash
 from flash.core.classification import Labels
 from flash.core.finetuning import NoFreeze
-from flash.data.utils import download_data
+from flash.core.data.utils import download_data
 from flash.utils.imports import _KORNIA_AVAILABLE, _PYTORCHVIDEO_AVAILABLE
 from flash.video import VideoClassificationData, VideoClassifier
 
