@@ -12,16 +12,11 @@ import flash
 from flash.core.classification import Labels
 from flash.core.finetuning import NoFreeze
 from flash.core.data.utils import download_data
-from flash.utils.imports import _KORNIA_AVAILABLE, _PYTORCHVIDEO_AVAILABLE
 from flash.video import VideoClassificationData, VideoClassifier
 
-if _PYTORCHVIDEO_AVAILABLE and _KORNIA_AVAILABLE:
-    import kornia.augmentation as K
-    from pytorchvideo.transforms import ApplyTransformToKey, RandomShortSideScale, UniformTemporalSubsample
-    from torchvision.transforms import CenterCrop, Compose, RandomCrop, RandomHorizontalFlip, Normalize
-else:
-    print("Please, run `pip install torchvideo kornia`")
-    sys.exit(1)
+import kornia.augmentation as K
+from pytorchvideo.transforms import ApplyTransformToKey, RandomShortSideScale, UniformTemporalSubsample
+from torchvision.transforms import CenterCrop, Compose, RandomCrop, RandomHorizontalFlip, Normalize
 
 
 if __name__ == '__main__':
