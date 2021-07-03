@@ -1,0 +1,5 @@
+lightning-flash @git+https://github.com/PyTorchLightning/lightning-flash.git
+torchvideo
+kornia>=0.5.1
+nltk!=3.6
+lightning-flash
