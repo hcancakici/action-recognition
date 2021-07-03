@@ -4,3 +4,4 @@ kornia>=0.5.1
 nltk!=3.6
 lightning-flash
 pytorchvideo==0.1.0
+fiftyone
